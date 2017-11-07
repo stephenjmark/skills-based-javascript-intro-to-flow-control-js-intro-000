@@ -7,14 +7,21 @@ function basicTeenager(age) {
 
 function teenager(age) {
   if (age >= 13 && age <= 19 ) {
-  return 'You are a teenager!' // executed if `conditionToTest` is truthy
+  return 'You are a teenager!' //  truthy
   } else {
-  return 'You are not a teenager' // executed if `conditionToTest` is falsey
+  return 'You are not a teenager' //  falsey
   }
 }
 
 function ageChecker(age) {
-
+  if (age >= 13 && age <= 19 ) {
+  return 'You are a teenager!' // executed if if is truthy
+} else if(age <= 12) {
+  return 'You are a kid' // executed if else if is truth
+  }
+  else {
+    return 'You are a grownup'
+  }
 }
 
 function ternaryTeenager(age) {
